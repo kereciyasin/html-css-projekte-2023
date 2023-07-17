@@ -2,21 +2,17 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Sorts+Mill+Goudy:ital@1&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy:ital@1&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="result.html" />
+    <title>Document</title>
   </head>
   <body>
     <div id="container">
@@ -26,19 +22,42 @@
           Thank you for signing up to Netflix.Tell me more about yourself.
         </h3>
       </header>
-      <section id="servey-form-container">
+      <section id="survey-form-container">
         <form action="result.html" method="get">
           <div class="input-box">
-            <label for="name">
-              <br />
+            <!-- <label
+              >Name
               <input
                 type="text"
                 name="name"
                 id="name"
                 placeholder="enter your name"
               />
-              <div class=""></div>
-            </label>
+            </label> -->
+            <label for="name">Name</label>
+            <br />
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="enter your name"
+            />
+          </div>
+          <div class="input-box">
+            <label for="age">Age</label><br />
+            <input type="number" name="age" id="age" placeholder="age" />
+          </div>
+          <div class="input-box">
+            <label for="email">Email</label><br />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="enter your email"
+            />
+          </div>
+          <div class="form-submit">
+            <button id="form-button">Send</button>
           </div>
         </form>
       </section>
