@@ -1,8 +1,11 @@
 /* - Mobile: 375px
-- Desktop: 1440px */
+- Desktop: 1440px 
+*/
+
 * {
   box-sizing: border-box;
 }
+
 html {
   font-size: 15px;
 }
@@ -22,18 +25,16 @@ body {
   margin: 0;
   padding: 0;
 }
-/* BASE End */
+/*  BASE End */
 
 /* HELPER */
-
 .w-100 {
   width: 100%;
 }
-
 .bt-none {
   border-bottom: none !important;
 }
-/* HELPER END */
+/* HELPER End */
 
 /* NAV */
 nav,
@@ -47,6 +48,7 @@ nav {
   display: flex;
   justify-content: space-between;
 }
+
 nav > ul {
   list-style: none;
   display: flex;
@@ -61,6 +63,7 @@ a {
 nav > ul > li > a:hover {
   text-decoration: underline;
 }
+
 /* NAV End */
 
 .container {
@@ -89,10 +92,10 @@ nav > ul > li > a:hover {
 }
 
 .item-detail {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: space-around; */
+  /* display: flex; */
+  /* flex-direction: column; */
   margin-top: 20px;
+  /* justify-content: space-around; */
 }
 
 .item-detail > a.btn {
@@ -103,13 +106,14 @@ nav > ul > li > a:hover {
   color: var(--off-white);
 }
 
-/* ASIDE  */
+/* ASIDE */
 
 .container > aside {
-  background-color: var(--very-dark-blue);
   flex: 1;
   padding: 20px;
+  background-color: var(--very-dark-blue);
 }
+
 .container > aside > h2 {
   color: var(--soft-orange);
   margin-top: 10px;
@@ -117,7 +121,7 @@ nav > ul > li > a:hover {
 }
 
 aside > .item {
-  /* margin-bottom: 30px; */
+  margin-bottom: 30px;
   border-bottom: 1px solid var(--dark-grayish-blue);
 }
 
@@ -129,34 +133,36 @@ aside > .item > p {
   color: var(--grayish-blue);
 }
 
-/* ASIDE END */
+/* ASIDE End */
 
 /* FOOTER */
-
 footer.container {
   gap: 0;
 }
 
 footer.container > .item {
-  padding: 20px;
   flex: 1;
-  /* background: red; */
+  /* background-color: red; */
   display: flex;
+  /* flex-wrap: wrap; */
 }
 
 footer.container > .item > img {
-  width: 100%;
+  width: 100px;
   max-height: 120px;
-  /* flex: 1; */
+  /* flex: 1 ; */
 }
+
 footer.container > .item > div {
   flex: 2;
   padding: 0 20px;
 }
+
 footer.container > .item h3 {
   margin: 0;
   color: var(--grayish-blue);
 }
+
 footer.container > .item h4 {
   margin: 10px 0 0;
 }
@@ -164,4 +170,4 @@ footer.container > .item h4 {
 footer.container > .item p {
   color: var(--very-dark-blue);
 }
-/* FOOTER END */
+/* FOOTER End */
